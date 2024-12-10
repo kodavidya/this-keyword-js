@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koda Vidya</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="cartApp">
+      <div class="sub-conatiner">
+        <h1>Shopping Cart App</h1>
+        <div class="toggle-theme">
+          <button id="themeToggle">Switch to Dark Mode</button>
+        </div>
+      </div>
+      <div id="cartPage">
+        <div>
+          <label for="itemInput">Add Item:</label>
+          <input type="text" id="itemInput" placeholder="Enter item name" />
+          <button id="addItemBtn">Add to Cart</button>
+        </div>
+        <div class="cart-items">
+          <h3>Cart Items:</h3>
+          <ul id="cartList"></ul>
+        </div>
+        <button id="checkoutBtn">Checkout</button>
+        <button id="clearCartBtn">Clear Cart</button>
+      </div>
+
+      <div id="checkoutPage" class="hidden">
+        <h2>Checkout</h2>
+        <div class="cart-items">
+          <h3>Items in your Cart:</h3>
+          <ul id="checkoutCartList"></ul>
+        </div>
+        <button id="payNowBtn">Pay Now</button>
+        <button id="goBackBtn">Go Back</button>
+      </div>
+
+      <div id="thankYouPage" class="hidden">
+        <h2>Thank You!</h2>
+        <p>Your payment was successful. Enjoy your purchase!</p>
+        <button id="startOverBtn">Start Over</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
